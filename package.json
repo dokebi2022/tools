@@ -6,20 +6,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "set NODE_ENV=development&& webpack",
-    "build": "set NODE_ENV=production&& webpack"
+    "build": "set NODE_ENV=production&& webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://dokebi2022@github.com/dokebi2022/tools.git"
   },
-  "author": "",
+  "author": "GitHub",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dokebi2022/tools/issues"
   },
-  "homepage": "https://github.com/dokebi2022/tools#readme",
+  "homepage": "https://dokebi2022.github.io/tools",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
